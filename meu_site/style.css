@@ -1,0 +1,65 @@
+.quadrado {
+    width: 250px;
+    height: 150px;
+    border-radius: 8%;
+    margin-left: 30px;
+    overflow: hidden
+    -moz-transition (all 0.2s);
+    -webkit-transition-all: 0.2s;
+    transition: all 0.2s;
+}
+
+.quadrado:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: inset 3px 3px 3px black;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 10%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.borda {
+  border: solid 15px;
+  color: #212529; 
+  border-radius: 2%;
+}
+
+.golquadrado {
+  padding-right: 30px;
+}
+
+.demo {
+  padding-bottom: 5%;
+}
